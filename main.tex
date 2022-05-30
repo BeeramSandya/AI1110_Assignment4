@@ -1,0 +1,52 @@
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Assignment 4} 
+\author{Beeram Sandya cs21btech11006}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+% Lists frame
+\section{Question}
+\begin{frame}{Question}
+\begin{block}{Papoulis ch4 ex 4.29}
+
+Suppose that in $n$ trials, the probability that an event $A$ occurs at least once equals $P_1$. Show that if $P\left(A\right) = p$ and $pn << 1$, then $P_1 \approx np$.
+
+\end{block}
+\end{frame}
+
+% Blocks frame
+\section{Solution}
+\begin{frame}{Solution}
+
+If $P(A) = p$ then $P(\overline A) = 1-p$ \\
+$P_1 = 1-Q_1$ where $Q_1$ is the probability for the event A  does not occur at all. \\
+$Q_1 = (1-p)^n$  if $pn << 1$ then \\
+$\implies Q_1 \approx 1-np$ \\
+$\implies P_1 \approx np$
+
+\end{frame} 
+
+\end{document}
